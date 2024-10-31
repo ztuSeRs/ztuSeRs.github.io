@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Debug</title>
+      <link href="/2024/10/30/Debug/"/>
+      <url>/2024/10/30/Debug/</url>
+      
+        <content type="html"><![CDATA[<p>linux远程调试配置</p><p>将IDA安装目录dbgsrv文件夹里的linux_server64拷贝到64位的linux虚拟机中；</p><p><img src="https://m0641c309il.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDY2MmJlODQxN2IyZDMzZTQwMTA0ODM5NDEyMGU1YzRfd1kwUWk2YzdxdU1za1JzRHVhd0ZCMW9JRFFsWWZHdFhfVG9rZW46QTZMQmJEZGFMb0ExSGZ4RHlGYmNRaG9hbkJlXzE3MzAzOTA3Njc6MTczMDM5NDM2N19WNA" alt="img"></p><p><img src="https://m0641c309il.feishu.cn/space/api/box/stream/download/asynccode/?code=NDNjNjBkZDFlZDAwZDFmZDA4YzE5YzRhM2QyYjBhNTRfWEhnTGloVG12WUVnOVZBOWtnOVRxNEhLSVZzTGxoV1lfVG9rZW46VWNpWmJwS2ZTb0NEV0R4dXE0VGNUeHdpbmJkXzE3MzAzOTA3Njc6MTczMDM5NDM2N19WNA" alt="img"></p><p>在虚拟机的终端中通过命令chmod 777 linux_server64为程序添加可执行权限；</p><p>通过命令.&#x2F;linux_server64开启服务端；</p><p>在IDA中点击Debugger，添加Remote Linux Debugger</p><p>点击Debugger下的Process Option进行如下配置：</p><p><img src="https://m0641c309il.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGUxMWE1M2Y3ZWYwOTc2M2MzMzVmZjhmZDhmOGE3NzRfREtzejdhanFSTHJtRExjV1FidG9Kb2xMQk9HdXZQZGNfVG9rZW46TTlhNGIxa0JSb0FUQnJ4MGZyMWNlZlBRblNlXzE3MzAzOTA3Njc6MTczMDM5NDM2N19WNA" alt="img"></p><p>需要更改的只有Hostname那一行：在虚拟机中使用ifconfig查看</p><p><img src="https://m0641c309il.feishu.cn/space/api/box/stream/download/asynccode/?code=OTUxMjEyOTMzM2E3ODYxNjkyNTUwY2QxNWIyNTVkMWFfZGdmTmU5SW15ZWpiQ1pQRjI3d2xaZVZOVlNlTVFlblJfVG9rZW46SXE3NGJSMnNmb0xpeWZ4QXlETmNCcWVSbmdkXzE3MzAzOTA3Njc6MTczMDM5NDM2N19WNA" alt="img"></p><p>后面的端口默认23946</p><p>前三行都是可执行文件在linux虚拟机中的位置</p><p>Hostname是虚拟机的IP，端口用默认值</p><p>动态调试的时候启动Linux_serverx64服务之后在ida中选择远程Linux调试就OK了</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>校赛wp</title>
       <link href="/2024/10/24/%E6%A0%A1%E8%B5%9Bwp/"/>
       <url>/2024/10/24/%E6%A0%A1%E8%B5%9Bwp/</url>
