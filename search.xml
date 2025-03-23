@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>web目录</title>
+      <link href="/2025/03/23/web%E7%9B%AE%E5%BD%95/"/>
+      <url>/2025/03/23/web%E7%9B%AE%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<p>1.目录遍历</p><p>2.PHPINFO（php网页）</p><p>3.备份文件下载</p><blockquote><p>网站源码</p><p>bak文件</p><p>vim缓存（swp，swo，swn）</p><p>.DS_Store(网站文件目录)</p><p>index泄露：</p><p>git泄露：log（githack）</p><p>stash泄露，用stash解出（隐藏记录）</p></blockquote><p>4.SVN泄露（dvcs-ripper ）</p><p>5.HG泄露： 使用Mercurial部署会出现HG泄露（dvcs-ripper）</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2025.3.20/5</title>
       <link href="/2025/03/20/2025.3.20/"/>
       <url>/2025/03/20/2025.3.20/</url>
