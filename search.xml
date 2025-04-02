@@ -4,11 +4,37 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2025/03/27/%E6%96%B0%E5%BB%BA%20%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/"/>
+      <url>/2025/03/27/%E6%96%B0%E5%BB%BA%20%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/</url>
+      
+        <content type="html"><![CDATA[<p>Fuck you！！！！！！！！！！！！！！！！</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2025/03/23/web%E5%AD%A6%E4%B9%A0wp/"/>
+      <url>/2025/03/23/web%E5%AD%A6%E4%B9%A0wp/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>web目录</title>
       <link href="/2025/03/23/web%E7%9B%AE%E5%BD%95/"/>
       <url>/2025/03/23/web%E7%9B%AE%E5%BD%95/</url>
       
-        <content type="html"><![CDATA[<p>1.目录遍历</p><p>2.PHPINFO（php网页）</p><p>3.备份文件下载</p><blockquote><p>网站源码</p><p>bak文件</p><p>vim缓存（swp，swo，swn）</p><p>.DS_Store(网站文件目录)</p><p>index泄露：</p><p>git泄露：log（githack）</p><p>stash泄露，用stash解出（隐藏记录）</p></blockquote><p>4.SVN泄露（dvcs-ripper ）</p><p>5.HG泄露： 使用Mercurial部署会出现HG泄露（dvcs-ripper）</p>]]></content>
+        <content type="html"><![CDATA[<p>.目录遍历</p><h2 id="一-信息泄露"><a href="#一-信息泄露" class="headerlink" title="一.信息泄露"></a>一.信息泄露</h2><h3 id="1-目录遍历"><a href="#1-目录遍历" class="headerlink" title="1.目录遍历"></a>1.目录遍历</h3><h3 id="2-PHPINFO（php网页）"><a href="#2-PHPINFO（php网页）" class="headerlink" title="2.PHPINFO（php网页）"></a>2.PHPINFO（php网页）</h3><h3 id="3-备份文件下载"><a href="#3-备份文件下载" class="headerlink" title="3.备份文件下载"></a>3.备份文件下载</h3><blockquote><p>网站源码</p><p>bak文件，index.php.bak</p><p>vim缓存（swp，swo，swn）</p><p>.DS_Store(网站文件目录:)(.DS_Store)</p><p>index泄露：</p><p>git泄露：log（githack）</p><p>stash泄露，用stash解出（隐藏记录）</p></blockquote><h3 id="4-SVN泄露（dvcs-ripper-）"><a href="#4-SVN泄露（dvcs-ripper-）" class="headerlink" title="4.SVN泄露（dvcs-ripper ）"></a>4.SVN泄露（dvcs-ripper ）</h3><h3 id="5-HG泄露：-使用Mercurial部署会出现HG泄露（dvcs-ripper）"><a href="#5-HG泄露：-使用Mercurial部署会出现HG泄露（dvcs-ripper）" class="headerlink" title="5.HG泄露： 使用Mercurial部署会出现HG泄露（dvcs-ripper）"></a>5.HG泄露： 使用Mercurial部署会出现HG泄露（dvcs-ripper）</h3><h2 id="二-密码口令"><a href="#二-密码口令" class="headerlink" title="二.密码口令"></a>二.密码口令</h2><h3 id="1-弱口令"><a href="#1-弱口令" class="headerlink" title="1.弱口令"></a>1.弱口令</h3><h3 id="2-默认口令"><a href="#2-默认口令" class="headerlink" title="2.默认口令"></a>2.默认口令</h3><h3 id="3-社会工程"><a href="#3-社会工程" class="headerlink" title="3.社会工程"></a>3.社会工程</h3><h2 id="三-SQL注入"><a href="#三-SQL注入" class="headerlink" title="三.SQL注入"></a>三.SQL注入</h2><h3 id="1-SQL注入"><a href="#1-SQL注入" class="headerlink" title="1.SQL注入"></a>1.SQL注入</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM users WHERE username = &#x27;user1&#x27; AND password = &#x27;password1&#x27;;</span><br></pre></td></tr></table></figure><h4 id="注入攻击"><a href="#注入攻击" class="headerlink" title="注入攻击"></a>注入攻击</h4><p>如果攻击者输入：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">用户名： admin&#x27; --</span><br><span class="line">密码： anything</span><br></pre></td></tr></table></figure><p>SQL 查询变成：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM users WHERE username = &#x27;admin&#x27; --&#x27; AND password = &#x27;anything&#x27;;</span><br></pre></td></tr></table></figure><p>其中 <strong>–</strong> 是 SQL 的注释符号，忽略了密码条件，直接绕过了身份验证。</p>]]></content>
       
       
       
