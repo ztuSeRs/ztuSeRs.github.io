@@ -1,35 +1,49 @@
 #page-header {
   background: transparent !important;
+  position: relative;
+  padding-bottom: 0;
 }
 #page-header.post-bg,
 #page-header.not-home-page {
-  height: 280px !important;
+  height: auto !important;
+  min-height: 120px;
+  padding: 20px 0 10px;
 }
-#page-header #post-info {
-  bottom: 40px !important;
+#page-header.post-bg #post-info,
+#page-header.not-home-page #post-info {
+  position: relative;
+  bottom: auto !important;
+  margin: 5px 0;
   text-align: center;
 }
-#page-header #page-site-info {
-  top: 140px !important;
+#page-header.post-bg #page-site-info,
+#page-header.not-home-page #page-site-info {
+  position: relative;
+  top: auto !important;
+  margin: 10px 0;
 }
 @media screen and (max-width: 768px) {
+  #page-header.post-bg,
   #page-header.not-home-page {
-    height: 200px !important;
+    min-height: 100px;
+    padding: 15px 0 5px;
   }
-  #page-header #post-info {
-    bottom: 10px !important;
+  #page-header.post-bg #post-info,
+  #page-header.not-home-page #post-info {
+    margin: 3px 0;
+    bottom: auto !important;
   }
-  #page-header #page-site-info {
-    top: 100px !important;
+  #page-header.post-bg #page-site-info,
+  #page-header.not-home-page #page-site-info {
+    top: auto !important;
+    margin: 5px 0;
   }
 }
 .top-img {
-  height: 56vw;
-  max-height: 375px;
-  min-height: 250px;
-  margin: -50px -40px 50px;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
+  height: 40vw;
+  max-height: 280px;
+  min-height: 150px;
+  margin: 0 -20px 10px;
   background-position: center center;
   background-size: cover;
   -webkit-transition: all 0.3s;
@@ -40,8 +54,8 @@
 }
 @media screen and (max-width: 768px) {
   .top-img {
-    height: 230px;
-    margin: -36px -14px 36px;
+    height: 150px;
+    margin: 0 -10px 8px;
   }
 }
 [data-theme='dark'] .top-img {
@@ -65,4 +79,7 @@
 [data-theme='dark'] #footer-wrap,
 [data-theme='dark'] #footer-wrap a {
   color: var(--light-grey);
+}
+.post-content {
+  margin-top: 10px !important;
 }
