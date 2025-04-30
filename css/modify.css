@@ -1,35 +1,25 @@
 #page-header {
   background: transparent !important;
 }
-.post-bg,
-.not-home-page {
-  min-height: 180px;
-  height: auto !important;
-  padding-bottom: 40px;
+#page-header.post-bg,
+#page-header.not-home-page {
+  height: 280px !important;
 }
-.post-bg #post-info,
-.not-home-page #post-info {
-  position: relative;
-  bottom: auto;
-  margin-top: 20px;
+#page-header #post-info {
+  bottom: 40px !important;
+  text-align: center;
 }
-.post-bg #page-site-info,
-.not-home-page #page-site-info {
-  position: relative;
-  top: auto;
-  margin: 30px 0;
+#page-header #page-site-info {
+  top: 140px !important;
 }
 @media screen and (max-width: 768px) {
-  .post-bg.not-home-page,
-  .not-home-page.not-home-page {
+  #page-header.not-home-page {
     height: 200px !important;
   }
-  .post-bg #post-info,
-  .not-home-page #post-info {
+  #page-header #post-info {
     bottom: 10px !important;
   }
-  .post-bg #page-site-info,
-  .not-home-page #page-site-info {
+  #page-header #page-site-info {
     top: 100px !important;
   }
 }
