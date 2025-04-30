@@ -3,14 +3,14 @@
 }
 #page-header.post-bg,
 #page-header.not-home-page {
-  height: 20px !important;
+  height: auto !important;
 }
 #page-header #post-info {
-  bottom: 40px !important;
+  bottom: auto !important;
   text-align: center;
 }
 #page-header #page-site-info {
-  top: 140px !important;
+  top: auto !important;
 }
 @media screen and (max-width: 768px) {
   #page-header.not-home-page {
