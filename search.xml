@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2025/06/15/%E4%BC%98%E5%8C%96/"/>
+      <url>/2025/06/15/%E4%BC%98%E5%8C%96/</url>
+      
+        <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>我对windows电脑进行优化，的记录；（仅仅只是推荐，无具体配置流程）</p><h2 id="windows优化"><a href="#windows优化" class="headerlink" title="windows优化"></a>windows优化</h2><ul><li>这是一个对windows的界面不太满意的师傅，可以看一下；我这几天对windows感觉到腻了，看到<a href="%5BYaloisBlog%5D(https://blog.sky233.top/)">Yalois</a>师傅新买的mac，被这种简约的样子直接吸引了。就想着直接转成macOS系统，但是怕直接装坏了，就直接优化一下感觉也是性价比比较高的方案了。话不多说直接上效果图；</li></ul><p><img src="/./../%E4%BC%98%E5%8C%96/image-20250616014643707.png" alt="image-20250616014643707"></p><p><img src="/./../%E4%BC%98%E5%8C%96/image-20250616015513652.png" alt="image-20250616015513652"></p><p>窗口动画：</p><p><img src="/./../%E4%BC%98%E5%8C%96/%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6%202025-06-16%20014756.gif" alt="屏幕录制 2025-06-16 014756"></p><p>接下来一一介绍优化所用的软件；</p><h2 id="软件介绍"><a href="#软件介绍" class="headerlink" title="软件介绍"></a>软件介绍</h2><h3 id="MydockFinder"><a href="#MydockFinder" class="headerlink" title="MydockFinder"></a><a href="%5BMyDockFinder%5D(https://www.mydockfinder.com/)">MydockFinder</a></h3><p>这是这次优化的主要软件；MyDockFinder 是一款专为 Windows 用户设计的桌面美化工具，能够将 Windows 桌面模拟成 macOS 的风格。</p><ul><li><p><strong>高度仿真macOs</strong></p></li><li><p>系统级别的模糊效果（MyDockFinder 通过调用 Windows 系统的模糊效果接口来实现类似 macOS 的模糊背景效果。在 Windows 11 上，它利用 WinUI 模糊效果，支持自定义模糊强度。对于 Windows 10 1803 及以上版本，它使用高斯模糊效果，而在 Windows 7 和较老版本的 Windows 10 上，则采用 Aero 毛玻璃效果）</p></li><li><p><strong>文件和文件夹管理</strong></p></li><li><p><strong>消息提示</strong>（这个实测QQ会跟windows的消息提醒冲突；会蹦出两个消息提示）</p></li><li><p><strong>窗口最小化</strong></p><p>最小化动画采用 D3D11 硬件加速渲染技术实现。这种技术可以模拟 macOS 的窗口最小化动画，提供流畅且逼真的视觉效果</p></li><li><p><strong>支持个性化设置</strong></p></li><li><p><strong>操作简单</strong></p></li><li><p><strong>资源占用低</strong></p></li><li><p><strong>即时生效</strong>（无需设置完重启）</p><p>MyDockFinder 使用 WinUI 和 GPU 渲染技术，实现流畅的动画效果和贝塞尔曲线圆角模糊。用户可以调节模糊强度，以达到理想的视觉效果</p><p>具体的设置也是非常简洁明了，可以根据自己的想法进行定制；也有创意工坊，会有大佬发各种可爱或者整活的资源包</p><p>设置页面：</p><p><img src="/./../%E4%BC%98%E5%8C%96/image-20250616021633141.png" alt="image-20250616021633141"></p></li></ul><p>安装的过程也很简单；在steam上就能直接下载，售价是24块钱，和wallpaper一样支持离线启动。</p><p>但是有个问题是qq的截屏会有一定的bug所以推荐一个截屏软件（支持OCR）</p><h6 id="Pixpin-PixPin-强大且免费的截图贴图工具"><a href="#Pixpin-PixPin-强大且免费的截图贴图工具" class="headerlink" title="[Pixpin](PixPin - 强大且免费的截图贴图工具)"></a>[Pixpin](<a href="https://pixpin.cn/">PixPin - 强大且免费的截图贴图工具</a>)</h6><p>可以说是qq截图的平替了</p><h3 id="Wallpaper-Engine"><a href="#Wallpaper-Engine" class="headerlink" title="Wallpaper Engine"></a>Wallpaper Engine</h3><p>这个软件应该大多数人都会有；不多赘述了steam价格（我买的时候好像是36）；</p><p>当然其实是有免费差不多的软件名字叫[wallhaven](<a href="https://wallhaven.cc/">Awesome Wallpapers - wallhaven.cc</a>)</p><p>之前是有一个软件的但是现在找不到具体来源了</p><p>windows几乎靠这两个就能实现很大的优化；ps：但是终究是windows系统下对macos系统的模仿仍旧会有很多不足，只能说瑕不掩瑜。</p><h3 id="桌宠"><a href="#桌宠" class="headerlink" title="桌宠"></a>桌宠</h3><p>桌面上如果觉得太单调可以尝试一下[BongCat](<a href="https://github.com/ayangweb/BongoCat">ayangweb&#x2F;BongoCat: 🐱 跨平台桌宠 BongoCat，为桌面增添乐趣！</a>)这个桌宠github的项目（结合live2D，b站上也有很多模型）他能实时你的鼠标和按键，算是个简单的虚拟形象了(这个最近在活跃的更新，解决了一堆bug，还更新了一键自定义模型的功能；)</p><p>让你使用电脑的时候不孤单</p><p><img src="/./../%E4%BC%98%E5%8C%96/image-20250616022500606.png" alt="image-20250616022500606"></p><hr><h2 id="网页优化"><a href="#网页优化" class="headerlink" title="网页优化"></a>网页优化</h2><p>对b站网页版进行更新<br>最终效果：</p><p><img src="/./../%E4%BC%98%E5%8C%96/image-20250618160340734.png" alt="image-20250618160340734"></p><p>这个是一个网页的插件：[BewlyBewly](<a href="https://github.com/BewlyBewly/BewlyBewly">BewlyBewly&#x2F;BewlyBewly: Just make a few small changes to your Bilibili homepage. (English | 简体中文 | 正體中文 | 廣東話)</a>)</p><p>稍加设置就能得到同等的效果</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 推荐 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>幻樱漫展blog</title>
       <link href="/2025/04/30/%E5%B9%BB%E6%A8%B1%E6%BC%AB%E5%B1%95blog/"/>
       <url>/2025/04/30/%E5%B9%BB%E6%A8%B1%E6%BC%AB%E5%B1%95blog/</url>
@@ -110,44 +129,6 @@
         <tags>
             
             <tag> web </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>2025.3.20/5</title>
-      <link href="/2025/03/20/2025.3.20/"/>
-      <url>/2025/03/20/2025.3.20/</url>
-      
-        <content type="html"><![CDATA[<p>​今天复习了u4单词和主语语法，大雁老师讲的确实很有意思。我确实低估了英语语法的难度。在社团感觉到说不上来的感受，但是我觉得我想多出去走走，这周六有一个“nctf”比赛，周末是校赛，我发现好像除了我自己，不甚至我自己，都没有办法按照我所想的和运行（并不是控制的那种意思）。今天也很不在状态，我感觉到自己是在浪费生命，或许我要是得了一个绝症还是一件令我开心得事情，必竟生命已经倒计时，我的倒计时要是被提前至少我是知道自己的倒计时的时间了。</p><p>​好像每天发生的事情都会给我带来焦虑，我不知道这种感觉是否是正确的，但是弄得我很难受，吵闹，咋呼，令人作呕，仿佛世间所有的美好都与我擦肩而过，我看得见他们，但却握不住他们，或许这就是我这一生的基调吧。窥探别人的幸福令我焦虑，深挖自己的历史令我抑郁，我在这些情感的交织下变得疯狂。世界暗淡，雷声四起，雨点擦过我的睫毛，我摊开双手，迎接这一场疯狂。这仿佛才是我应有的人生格调，我在这种感受下，逐渐兴奋，癫狂。似乎逃离了这平静的世界，拥抱混沌。我睁开眼，风穿透我的四肢，像电流一般爬满我的身体。好像是大自然的怒吼，怒吼着告诉我，还有一线生机。</p><p>​歌曲能给我们带来情绪上的改变，我更希望自己能够不跟别人说话交流，但是那是对的吗？那是不对的，我知道这种氛围是不对的，但是我没有办法去这么做，因为这个环境就是不正常。世界仿佛已经变得畸形，我不知道我该何去何从，我也不知道我是否能够去能够从。</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 小记 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>2025.3.14小记</title>
-      <link href="/2025/03/12/2025.3.14/"/>
-      <url>/2025/03/12/2025.3.14/</url>
-      
-        <content type="html"><![CDATA[<p>ok,写点日记感觉blog不写点日记不太像一个blog，也可能是实在没啥能写的了</p><p>开始今天的日记：</p><p>这几天都早上7点起的床，身体也逐渐适应了，昨天晚上喝了几杯原浆就醉了，真的难受，幸亏早上没有头疼</p><p>，今天上了计算机操作系统（OS）学习了很多知识，但是今晚上还没有复习，记住的并不是很多。今天格外的累</p><p>明天说好了一起去外面玩，但是，明天我得去医院，我准备早上早起去医院，然后去买药。今天英语没有复习</p><p>这两天状态都不是很好，我得赶紧调整一下状态，在饮食上也有点问题感觉，该少吃点油腻的东西，第一次写日记也不知道该写什么，明天还要去买药，</p><p>私は落ちることができません</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 小记 </tag>
             
         </tags>
       
